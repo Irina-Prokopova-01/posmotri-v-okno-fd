@@ -60,10 +60,11 @@ ol {
   display: flex;
   gap: 30px;
   align-items: end;
-  /*margin: 133px 30px;*/
+  margin: 133px 30px;
 }
 
 .result {
+  padding-top: 78px;
 }
 
 .content__details {
@@ -75,14 +76,10 @@ ol {
   padding-bottom: 26px;
 }
 
-.title {
-  padding-bottom: 26px;
-}
-
 .content__list-container {
   display: flex;
   flex-direction: column;
-  height: 375px;
+  height: 297px;
   overflow: auto;
   gap: 30px
 }
@@ -93,27 +90,10 @@ ol {
   gap: 30px;
 }
 
-.content__list-item {
-
-}
-
-
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /*padding-top: 16px;*/
-}
-
-.search-form__textfield {
-
-}
-
-.search-form__fieldset {
-
-}
-
-.button {
 }
 
 .result__video-container {
@@ -142,4 +122,65 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  max-width: 196px;
 }
+
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1)
+}
+
+.content__accent {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: rgba(84, 80, 80, 1)
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1)
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  text-overflow: ellipsis;
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content__video-card-description {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16.2px;
+  color: rgba(255, 255, 255, 1);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box; /* Используем бокс */
+  -webkit-box-orient: vertical; /* Устанавливаем вертикальную ориентацию */
+  -webkit-line-clamp: 3; /* Ограничиваем до трех строк */
+}
+
+.content__video-card-description
