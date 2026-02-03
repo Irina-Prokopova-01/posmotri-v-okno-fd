@@ -258,3 +258,15 @@ input {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
+
+.search-form__label:has(.search-form__checkbox):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+/*.search-form__label:hover .search-form__label-text {*/
+/*  cursor: pointer;*/
+/*  text-decoration: underline;*/
+/*}*/
