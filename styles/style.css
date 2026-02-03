@@ -333,3 +333,15 @@ input {
 .content__list-item {
   padding: 3px;
 }
+
+.result__video-container {
+  position: relative;
+}
+
+.content__list-container {
+  position: relative;
+}
+
+.preloader {
+  position: absolute;
+}
