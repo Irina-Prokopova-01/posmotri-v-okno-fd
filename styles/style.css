@@ -225,9 +225,6 @@ input {
 .search-form__textfield {
   width: 225px;
   height: 27px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
   font-family: 'Fira Sans Condensed', sans-serif;
 }
 
