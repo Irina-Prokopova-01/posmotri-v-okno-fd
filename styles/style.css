@@ -56,7 +56,6 @@ ol {
 
 .content {
   width: 1140px;
-  min-height: 534px;
   display: flex;
   gap: 30px;
   align-items: end;
@@ -139,11 +138,6 @@ ol {
 
 
 .content__accent {
-  font-family: Oswald, sans-serif;
-  font-weight: 700;
-  font-size: 75px;
-  line-height: 94%;
-  text-transform: uppercase;
   color: rgba(84, 80, 80, 1)
 }
 
@@ -220,7 +214,7 @@ input {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  color: #fff;
+  color: currentColor;
   background-color: inherit;
   border-top: 1px solid rgba(255, 255, 255, 1);
   border-right: none;
@@ -275,11 +269,6 @@ input {
   cursor: pointer;
   text-underline-offset: 3px;
 }
-
-/*.search-form__label:hover .search-form__label-text {*/
-/*  cursor: pointer;*/
-/*  text-decoration: underline;*/
-/*}*/
 
 .button {
   border: 1px solid rgba(255, 255, 255, 1);
