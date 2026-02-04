@@ -72,10 +72,6 @@ ol {
   height: 100%;
 }
 
-.title {
-  padding-bottom: 26px;
-}
-
 .content__list-container {
   display: flex;
   flex-direction: column;
@@ -134,17 +130,17 @@ ol {
 .title {
   font-family: Oswald, sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1)
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 26px;
 }
+
 
 .content__accent {
   font-family: Oswald, sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -159,7 +155,6 @@ ol {
 .content__video-card-title {
   font-family: Oswald, sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
@@ -168,6 +163,7 @@ ol {
   padding-right: 10px;
   white-space: nowrap;
   overflow: hidden;
+  padding-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -199,7 +195,14 @@ ol {
 }
 
 .search-form__fieldset {
+  display: block;
   border: none;
+  width: 225px;
+  height: 54px;
+}
+
+.search-form__fieldset:not(:first-child) {
+  padding-left: 7px;
 }
 
 .search-form__fieldset-title {
@@ -223,6 +226,15 @@ input {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.search-form__textfield {
+  width: 225px;
+  height: 27px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__textfield::placeholder {
@@ -261,6 +273,7 @@ input {
 .search-form__label:has(.search-form__checkbox):hover {
   text-decoration: underline;
   cursor: pointer;
+  text-underline-offset: 3px;
 }
 
 /*.search-form__label:hover .search-form__label-text {*/
@@ -292,6 +305,7 @@ input {
 .button:hover {
   cursor: pointer;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .button:active {
@@ -331,7 +345,7 @@ input {
 }
 
 .content__list-item {
-  padding: 3px;
+  padding: 0 3px;
 }
 
 .result__video-container {
