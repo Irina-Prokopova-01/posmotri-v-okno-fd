@@ -74,6 +74,7 @@ ol {
 .content__list-container {
   display: flex;
   flex-direction: column;
+  position: relative;
   height: 297px;
   overflow: auto;
   gap: 30px
@@ -95,6 +96,7 @@ ol {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
@@ -144,6 +146,7 @@ ol {
 
 .content__card-link {
   text-decoration: none;
+  display: block;
   color: rgba(255, 255, 255, 1)
 }
 
@@ -311,10 +314,6 @@ input {
   outline: 1px solid rgba(255, 255, 255, 1);
 }
 
-.content__card-link {
-  display: block;
-}
-
 .content__card-link:active {
   background-color: rgba(84, 80, 80, 1);
 }
@@ -329,14 +328,6 @@ input {
 
 .content__list-item {
   padding: 0 3px;
-}
-
-.result__video-container {
-  position: relative;
-}
-
-.content__list-container {
-  position: relative;
 }
 
 .preloader {
